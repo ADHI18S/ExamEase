@@ -1,16 +1,10 @@
 pipeline {
     agent any
-  tools {
-    git 'Default'
-    maven 'M3'
-}
-
-    
     stages {
         stage('Clone Repository') {
             steps {
                 // Pull the code from GitHub
-                git url: "https://github.com/ADHI18S/examease.git"
+                git 'https://github.com/ADHI18S/examease.git'
             }
         }
         
