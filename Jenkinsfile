@@ -1,6 +1,10 @@
 pipeline {
     agent any
-  
+  tools {
+    git 'Default'
+    maven 'M3'
+}
+
     
     stages {
         stage('Clone Repository') {
